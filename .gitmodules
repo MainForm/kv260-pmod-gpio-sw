@@ -1,0 +1,4 @@
+[submodule "scripts"]
+	path = scripts
+	url = https://github.com/MainForm/digilent-vitis-scripts.git
+	branch = new_vitis/master

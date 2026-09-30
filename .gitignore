@@ -1,0 +1,49 @@
+# Vitis build and export outputs
+**/build/
+**/export/
+
+# BSP-internal CMake/Ninja build tree and generated libraries
+**/build_configs/gen_bsp/
+**/bsp/lib/
+
+# Object / dependency files
+*.o
+*.obj
+*.d
+
+# Generated compiler databases and editor indexes
+**/compile_commands.json
+**/.cache/
+
+# Logs / temporary files
+**/logs/
+*.log
+*.lock
+*.jou
+*.tmp
+
+# Generated binaries
+*.bin
+*.pdi
+*.elf
+
+# Vitis workspace-local metadata
+.vitisWorkspace.json
+
+# Vitis / SDT generated files
+.rigel_lopper/
+.rigel_lopper_temp_platform/
+**/_ide/
+**/.Xil/
+**/hw/sdt/
+
+# ignore everything in the generated ws workspace
+# (added automatically by checkout.py, see README Note #2)
+/ws/*
+!/ws/.keep
+
+/digilent-vitis-scripts/
+# ignore everything in the generated ws workspace
+# (added automatically by checkout.py, see README Note #2)
+!/ws/cleanup.cmd
+!/ws/cleanup.sh
